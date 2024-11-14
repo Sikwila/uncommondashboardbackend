@@ -15,3 +15,5 @@ router.post('/check-out', authMiddleware, attendanceController.checkOut);
 router.get('/records', authMiddleware, roleMiddleware('hr'), attendanceController.getAllRecords);
 
 module.exports = router;
+
+
